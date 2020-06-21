@@ -1,0 +1,150 @@
+---
+title:
+layout: ./app/layout.ejs
+engine: ejs
+current: FAQ
+---
+
+<div class="title d_flex">
+  <div class="container d_flex">
+    <h2 class="d_flex">
+      常見問題
+      <img
+        class="titleIcon"
+        src="./assets/res/faq/help-circle-sharp.svg"
+        alt=""
+      />
+    </h2>
+  </div>
+</div>
+
+<div class="qList d_flex">
+  <div class="container">
+    <p class="qTitle">我想詢問配鏡問題</p>
+    <ul class="card">
+      <li class="card-item">
+        <div class="card-item-header ">
+          <a class="d_flex" href="#">
+            <p>Q1.請問可否自備鏡框單配鏡片？</p>
+            <img
+              class="down"
+              src="./assets/res/faq/ic_keyboard_arrow_down_24px.svg"
+              alt=""
+            />
+            <img
+              class="up"
+              src="./assets/res/faq/ic_keyboard_arrow_up_24px.svg"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="card-item-body">
+          <p>
+            A1.我牌鏡框搭配薄型非球面鏡片1480元，搭配功能型鏡片則依鏡片種類加價購買。<br>
+            當日購買JINS盒裝眼鏡，搭配薄型非球面鏡片980元(隔日後則為1480元)，搭配功能型鏡片則依鏡片種類加價購買。<br>
+            他牌鏡框，搭配薄型非球面鏡片1980元，搭配功能型鏡片則依鏡片種類加價購買。
+          </p>
+        </div>
+      </li>
+      <li class="card-item">
+        <div class="card-item-header">
+          <a class="d_flex" href="#">
+            <p>Q2.眼鏡都可以20分鐘取件嗎？</p>
+            <img
+              class="down"
+              src="./assets/res/faq/ic_keyboard_arrow_down_24px.svg"
+              alt=""
+            />
+            <img
+              class="up"
+              src="./assets/res/faq/ic_keyboard_arrow_up_24px.svg"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="card-item-body">
+          <p>A2.為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘即可完成。</p>
+        </div>
+      </li>
+      <li class="card-item">
+        <div class="card-item-header">
+          <a class="d_flex" href="#">
+            <p>Q3.散光鏡片需要額外加價嗎？</p>
+            <img
+              class="down"
+              src="./assets/res/faq/ic_keyboard_arrow_down_24px.svg"
+              alt=""
+            />
+            <img
+              class="up"
+              src="./assets/res/faq/ic_keyboard_arrow_up_24px.svg"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="card-item-body">
+          <p>A3.無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
+        </div>
+      </li>
+      <li class="card-item">
+        <div class="card-item-header">
+          <a class="d_flex" href="#">
+            <p>Q4.我可以使用舊眼鏡的度數配鏡片嗎？</p>
+            <img
+              class="down"
+              src="./assets/res/faq/ic_keyboard_arrow_down_24px.svg"
+              alt=""
+            />
+            <img
+              class="up"
+              src="./assets/res/faq/ic_keyboard_arrow_up_24px.svg"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="card-item-body">
+          <p>A4.我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
+        </div>
+      </li>
+      <li class="card-item">
+        <div class="card-item-header">
+          <a class="d_flex" href="#">
+            <p>Q5.請問可以單購買鏡框嗎？</p>
+            <img
+              class="down"
+              src="./assets/res/faq/ic_keyboard_arrow_down_24px.svg"
+              alt=""
+            />
+            <img
+              class="up"
+              src="./assets/res/faq/ic_keyboard_arrow_up_24px.svg"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="card-item-body">
+          <p>A5. 當然可以。</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function () {
+    // 隱藏所有的 li 內文
+    $(".card-item-body").hide();
+    // 點擊 li
+    $(".card-item").click(function (e) {
+      // 取消預設 event 事件
+      e.preventDefault();
+      console.log($(this).children().next());
+      // 加上 active 屬性，並把其他有 active 的移除
+      $(this).toggleClass("active").siblings().removeClass("active");
+      // 讓自己的 li body 切換收合
+      $(this).children().next().slideToggle();
+      // 讓其他 li body 收合
+      $(this).siblings().children().next().slideUp();
+    });
+  });
+</script>

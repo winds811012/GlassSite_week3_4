@@ -1,0 +1,266 @@
+// h2 {
+//   font-size: 4rem;
+//   line-height: 1.5;
+// }
+// h3 {
+//   font-size: 3rem;
+//   line-height: 1.5;
+//   font-weight: bold;
+// }
+
+// h4 {
+//   font-size: 1.5rem;
+//   font-weight: bold;
+// }
+// .header {
+//   padding: 30px 88px;
+//   background-color: #aa0601;
+//   display: flex;
+//   justify-content: space-between;
+//   .menuBtn {
+//     display: none;
+//     color: #ffffff;
+//   }
+//   .menu {
+//     display: flex;
+//     width: 512px;
+//     justify-content: space-between;
+
+//     li {
+//       padding: 10px 0;
+//       a {
+//         color: white;
+//         font-size: 20px;
+//         line-height: 1.5;
+//         text-decoration: none;
+//       }
+//     }
+//   }
+// }
+
+.slogan {
+  background-image: url("../res/bg_1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 840px;
+  display: flex;
+  justify-content: center;
+  text-align: right;
+  font-weight: bold;
+  p {
+    font-size: 36px;
+    line-height: 1.5;
+  }
+  .container {
+    justify-content: center;
+    align-items: flex-end;
+  }
+}
+
+.feature {
+  padding: 64px 0;
+  background-color: #aa06010d;
+  display: flex;
+  justify-content: center;
+  .container {
+    align-items: center;
+    h3 {
+      margin-bottom: 64px;
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .card {
+      padding: 0 37px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h4 {
+        margin-bottom: 4px;
+      }
+      p {
+        font-size: 16px;
+        width: 208px;
+        color: black;
+        text-align: justify;
+      }
+      img {
+        margin-bottom: 40px;
+      }
+    }
+  }
+  .card:nth-child(3) img {
+    margin-top: 3px;
+    margin-bottom: 43px;
+  }
+  .card:nth-child(4) img {
+    margin-top: 15px;
+    margin-bottom: 55px;
+  }
+}
+
+
+.classic {
+  padding: 64px;
+  display: flex;
+  justify-content: center;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .icon {
+    width: 48px;
+    height: 48px;
+  }
+  h3 {
+    display: flex;
+    img {
+      height: 3rem;
+    }
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  // .container {
+  //   width: 672px;
+  // }
+  // .header {
+  //   padding: 30px 48px;
+  // }
+  // .menu {
+  //   max-width: 440px;
+  // }
+
+  .slogan p {
+    font-size: 20px;
+  }
+  // h2 {
+  //   font-size: 48px;
+  // }
+  // h3 {
+  //   font-size: 32px;
+  // }
+
+  // h4 {
+  //   font-size: 20px;
+  // }
+
+  .feature {
+    padding: 40px 48px 28px 48px;
+  }
+  .feature .container h3 {
+    margin-bottom: 32px;
+  }
+
+  .feature .container ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .feature .container .card {
+    padding: 0 50px;
+    margin-bottom: 52px;
+  }
+
+  .feature .card img {
+    width: 80px;
+    margin-bottom: 16px;
+  }
+  .feature .card h4 {
+    margin-bottom: 8px;
+  }
+  .feature .card:nth-child(3) img {
+    margin-top: 2px;
+    margin-bottom: 42px;
+  }
+
+  .feature .card:nth-child(4) img {
+    margin-top: 12px;
+    margin-bottom: 52px;
+  }
+  .feature .card p {
+    width: 224px;
+  }
+}
+
+@media (max-width: 375px) {
+  // .container {
+  //   width: 351px;
+  // }
+  // .header {
+  //   position: relative;
+  //   justify-content: center;
+  //   padding: 10px 0;
+  //   align-items: center;
+  //   flex-direction: column;
+  // }
+  // .header h1 img {
+  //   width: 48px;
+  //   height: 30px;
+  // }
+
+  // .menuBtn {
+  //   display: block;
+  //   position: absolute;
+  //   left: 13px;
+  //   width: 24px;
+  // }
+
+  // .menu {
+  //   max-height: 0px;
+  //   left: 0;
+  //   top: 100%;
+  //   width: 100%;
+  //   position: absolute;
+  //   text-align: center;
+  //   display: flex;
+  //   flex-direction: column;
+  //   overflow: hidden;
+  //   transition: all 0.8s;
+  //   z-index: 120;
+  // }
+  // .menu.active {
+  //   max-height: 252px;
+  // }
+
+  // .menu li {
+  //   display: block;
+  //   background: #aa0601;
+  //   color: #ffffff;
+  //   border-top: 1px solid #ffffff;
+  //   padding: 16px 0;
+  //   z-index: 120;
+  // }
+
+  // .menu li:hover {
+  //   background: #8f0400;
+  // }
+  .slogan {
+    height: 394px;
+  }
+
+  .slogan p {
+    font-size: 16px;
+  }
+  // h2 {
+  //   font-size: 32px;
+  // }
+  // h3 {
+  //   font-size: 24px;
+  // }
+  // h4 {
+  //   font-size: 20px;
+  // }
+  .feature .container .card {
+    margin-bottom: 32px;
+    text-align: center;
+  }
+}
+

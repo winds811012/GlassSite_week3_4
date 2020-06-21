@@ -1,0 +1,113 @@
+.title {
+  background: url("../res/faq/title_bg.png") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 304px;
+  justify-content: center;
+  .container {
+    justify-content: flex-end;
+    h2 {
+      align-items: center;
+      color: #000;
+    }
+    .titleIcon {
+      width: 58px;
+      height: 58px;
+      margin-left: 10px;
+    }
+  }
+}
+.qList {
+  padding: 88px 0 156px 0;
+  justify-content: center;
+  .qTitle {
+    font-size: 32px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .card-item {
+    border: 1px solid #000000;
+    font-size: 20px;
+  }
+
+  .card-item-header {
+    border-bottom: 1px solid #000000;
+    padding: 22px 38px;
+  }
+
+  .card-item-header a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    justify-content: space-between;
+  }
+
+  .card-item-body {
+    color: #000000;
+    font-size: 16px;
+    padding: 22px 38px;
+    background-color: #f2f2f2;
+  }
+  .card-item:not(.active) .up {
+    display: none;
+  }
+  .card-item.active .down {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    .container {
+      .titleIcon {
+        width: 48px;
+        height: 48px;
+        margin-left: 16px;
+      }
+    }
+  }
+  .qList {
+    padding: 40px 0 104px 0;
+    .qTitle {
+      font-size: 28px;
+    }
+    .card-item-header {
+      font-size: 16px;
+      padding: 16px 24px;
+    }
+    .card-item-body {
+      font-size: 14px;
+      padding: 16px 24px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    height: 143px;
+    .container {
+      h2 {
+        font-size: 28px;
+      }
+      .titleIcon {
+        width: 24px;
+        height: 24px;
+        margin-left: 8px;
+      }
+    }
+  }
+  .qList {
+    padding: 24px 0 56px 0;
+    .qTitle {
+      font-size: 20px;
+    }
+
+    .card-item-header {
+      padding: 16px;
+    }
+    .card-item-body {
+      padding: 16px;
+    }
+  }
+}

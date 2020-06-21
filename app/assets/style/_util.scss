@@ -1,0 +1,23 @@
+//About flex
+.d_flex {
+  display: flex;
+}
+.f_col {
+  flex-direction: column;
+}
+
+.mr_1 {
+  margin-right: 8px;
+}
+.mb_1 {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .mr_1 {
+    margin-right: 3px;
+  }
+  .mb_1 {
+    margin-bottom: 3px;
+  }
+}

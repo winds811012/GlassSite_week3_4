@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%- title %></title>
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="./reset.css" /> -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style/all.css" />
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".menuBtn").click(function (e) {
+          e.preventDefault();
+          $(".menu").toggleClass("active");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="header">
+        <a class="menuBtn" href="#">
+          <i class="fas fa-bars"></i>
+        </a>
+        <h1>
+          <a href="#"><img src="./assets/res/logo.png" alt="logo" /></a>
+        </h1>
+        <ul class="menu">
+          <li><a href="#">系列鏡框</a></li>
+          <li><a href="#">門市據點</a></li>
+          <li><a href="#">部落格</a></li>
+          <li><a href="./FAQ.html">常見問題</a></li>
+        </ul>
+      </div>
+      <%- contents %>
+      <footer class="d_flex">
+        <div class="container">
+          <div class="change"> 
+            <div class="footerHeader d_flex">
+              <ul class="menu d_flex">
+                <li>首頁</li>
+                <li>系列鏡框</li>
+                <li>部落格</li>
+                <li>常見問題</li>
+              </ul>
+              <ul class="socialIcon d_flex">
+                <li>
+                  <img src="./assets/res/ic_social_fb.svg" alt="facebook" />
+                </li>
+                <li>
+                  <img src="./assets/res/ic_social_ig.svg" alt="instragram" />
+                </li>
+                <li>
+                  <img src="./assets/res/ic_social_line.svg" alt="lines" />
+                </li>
+              </ul>
+            </div>
+            <ul class="footerBody d_flex f_col">
+              <li class="phone d_flex">
+                <img src="./assets/res/ic_phone_48px.svg" alt="" />
+                <p>0800-000-000</p>
+              </li>
+              <li class="mail d_flex">
+                <img src="./assets/res/ic_mail_outline_24px.svg" alt="" />
+                <p>glasses@business.com</p>
+              </li>
+            </ul>
+          </div>
+          <ul class="footerFooter d_flex">
+            <li class="left d_flex">
+              <img src="./assets/res/logo.png" alt="" />
+              <p>Copyright © 2020 Glasses.All rights reserved.</p>
+            </li>
+            <li class="right d_flex">
+              <ul class="d_flex">
+                <li>隱私權政策</li>
+                <li>服務條款</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
